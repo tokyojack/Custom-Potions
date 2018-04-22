@@ -13,15 +13,12 @@ import me.tokyojack.bukkit.custompotion.command.subcommands.Give;
 import me.tokyojack.bukkit.custompotion.utils.CustomPotion;
 import me.tokyojack.bukkit.custompotion.utils.subkommand.SubKommandManager;
 
+@Getter
 public class Core extends JavaPlugin {
 
+	@Getter
 	private static Core plugin;
 
-	public static Core getPlugin() {
-		return plugin;
-	}
-
-	@Getter
 	private Map<String, CustomPotion> customPotions = new HashMap<String, CustomPotion>();
 
 	public void onEnable() {
